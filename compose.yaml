@@ -1,0 +1,21 @@
+name: mobpro-rust
+
+services:
+  rust:
+    build: .
+    image: mobpro-rust-dev:local
+    init: true
+    volumes:
+      - type: bind
+        source: .
+        target: /workspace
+      - type: volume
+        source: cargo-cache
+        target: /cargo
+      - type: volume
+        source: build-cache
+        target: /target
+
+volumes:
+  cargo-cache:
+  build-cache:

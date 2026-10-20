@@ -1,0 +1,32 @@
+# Rust build artifacts and local Docker files
+/target/
+/.docker/
+
+# Runtime data (keep only the empty directory placeholder)
+/data/*
+!/data/.gitkeep
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+/.cargo/credentials
+/.cargo/credentials.toml
+.netrc
+.ssh/
+.aws/
+secrets/
+credentials.json
+credentials-*.json
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Personal editor/OS files and logs
+.DS_Store
+.idea/
+.vscode/
+*.log
