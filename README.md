@@ -7,19 +7,23 @@ Docker Desktopを起動し、プロジェクトのディレクトリで実行し
 ```sh
 cd mobpro_Rust
 docker compose up -d --build
+docker compose exec rust bash
 ```
 
 ## 実行
 
-`src/main.rs` を編集し、次のコマンドで実行します。
+`src/main.rs` を編集し、コンテナ内のターミナルで実行します。
 
 ```sh
-docker compose exec rust cargo run
+cargo run
 ```
 
 ## 終了
 
+コンテナ内のシェルを終了してから、Mac側でコンテナを停止します。
+
 ```sh
+exit
 docker compose stop
 ```
 
