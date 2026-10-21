@@ -1,5 +1,7 @@
 # mobpro_Rust
 
+このリポジトリはRust学習記録です
+
 ## 起動
 
 Docker Desktopを起動し、プロジェクトのディレクトリで実行します。
